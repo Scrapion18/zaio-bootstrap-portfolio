@@ -35,58 +35,64 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
   </head>
+
+
+
   <body class="bg-dark">
 
-      <header class="p-5 text-white">
+      <header class="p-5 text-white fixed-top">
         <div>
           <h3 class="float-md-start text-center">Portfolio</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about-us">About me</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
         
-    <div class="banner-wrap vh-100 vw-100 text-white">
-      <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+    <div class="banner-wrap vh-100 d-flex align-items-center justify-content-center text-white">
+      <div class="overlay"></div>
+      <main class="text-center">
         <h1 class="display-1">I am Shannon Herbst</h1>
-        <p class="lead">Fullstack Developer, Enterpreneur</p>
+        <h2>Web Developer</h2>
+        <span class="lead" id="typed"></span>
       </main>
     </div>
 
-    <section>
+    <section id="about-us">
          <div class="container p-5">
             <div class="card">
              <div class="card-body">
                  <div class="row">
                   <div class="col-md-6 col-sm-12">
                       <div class="row">
-                          <div class="col-md-6">pic</div>
-                          <div class="col-md-6">
-                              <p><strong>Name:</strong> Shan</p>
+                          
+                          <div class="col-md-6" id="left-collum">
+                              <img src="/assets/img1.jpg" alt="profile photo" id="profile-image">
+                              <p><strong>Name:</strong> Shannon Herbst</p>
                               <p><strong>Profile:</strong> Full Stack Developer</p>
-                              <p><strong>Email:</strong> Shan</p>
+                              <p><strong>Email:</strong> Shan@gmail.com</p>
                               <p><strong>Skills:</strong> 
-                                <span class="badge rounded-pill bg-dark">HTML</span>
-                                <span class="badge rounded-pill bg-dark">CSS</span>
-                                <span class="badge rounded-pill bg-dark">git</span>
-                                <span class="badge rounded-pill bg-dark">javascript</span>
-                                <span class="badge rounded-pill bg-dark">firebase</span>
-                                <span class="badge rounded-pill bg-dark">OOP</span>
-                                <span class="badge rounded-pill bg-dark">ReactJS</span>
-                                <span class="badge rounded-pill bg-dark">Redux</span>
-                                <span class="badge rounded-pill bg-dark">NodeJS</span>
-                                <span class="badge rounded-pill bg-dark">MongoDB</span>
-                                <span class="badge rounded-pill bg-dark">Express</span>
+                                <span class="badge rounded-pill bg-secondary">HTML</span>
+                                <span class="badge rounded-pill bg-secondary">CSS</span>
+                                <span class="badge rounded-pill bg-secondary">git</span>
+                                <span class="badge rounded-pill bg-secondary">javascript</span>
+                                <span class="badge rounded-pill bg-secondary">firebase</span>
+                                <span class="badge rounded-pill bg-secondary">OOP</span>
+                                <span class="badge rounded-pill bg-secondary">ReactJS</span>
+                                <span class="badge rounded-pill bg-secondary">Redux</span>
+                                <span class="badge rounded-pill bg-secondary">NodeJS</span>
+                                <span class="badge rounded-pill bg-secondary">MongoDB</span>
+                                <span class="badge rounded-pill bg-secondary">Express</span>
                               </p>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6">
                       <h1 class="text-center text-md-start"><mark>About me</mark></h1>
-                      <p class="lead">Experienced Co-Founder with a demonstrated history of working in the e-learning industry. Skilled in Software Engineering, Computer Science, Web Development, Management, and Leadership. 
-                      Strong business development professional with a Bachelor of Science (B.Sc.) focused in Computer Science and Information Systems from the University of Cape Town.</p>
+                      <p class="lead">Web developer with a certificate of higher education in computer engineering as well as a bootcamp in web development polishing both theoritical and practical knowledge.</p>
                   </div>
                  </div>
              </div>
@@ -94,14 +100,14 @@
         </div>
     </section>
 
-    section>
+    <section id="projects">
       <div class="container p-5">
         <h1 class="text-center"><mark>Projects</mark></h1>
         <div class="row">
           <div class="col-md-4 mt-3">
             <div class="card">
               <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                src="/assets/img-3.png"
                 class="card-img-top"
                 alt="..."
               />
@@ -113,17 +119,100 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="/assets/img-2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tesla Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://tesla-landing-page-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Shannon-Herbst/ecars/tree/main/assignment" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="/assets/img-4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Youtube Clone</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://youtube-clone-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Shannon-Herbst/youtube-assignment" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="/assets/imh-5.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google Keep Clone</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://zaio-google-keep-clone-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Scrapion18/zaio-netflix-clone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="/assets/img-6.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-Cars Sales Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://shannon-ecars.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://shannon-ecars.netlify.app/" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="/assets/img-3.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://lambent-nougat-7007b1.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Scrapion18/zaio-netflix-clone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
     
-    <section>
+    <section id="contact">
       <div class="container p-5">
         <div class="card p-3">
           <div class="card-body px-5 text-center">
            <h1><mark>Let's Connect</mark></h1>
-           <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking to get web development done.</p>
+           <p class="lead">Would love to connect with fellow developers and employers looking for developers.</p>
            <a class="fs-2" href="#" target="_blank"><i class="bi bi-github m-2"></i></a>
+           <a class="fs-2" href="#" target="_blank"><i class="bi bi-instagram m-2"></i></a>
+           <a class="fs-2" href="#" target="_blank"><i class="bi bi-linkedin m-2"></i></a>
            <form>
 
               <div class="mb-3">              
@@ -165,5 +254,37 @@
       </div>
     </section>
 
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-3">
+            <p>Developed by Shannon Herbst using Bootstrap</p>
+        </div>
+    </footer>
+
+
+    <script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 150;
+    const sectionHeight = section.clientHeight;
+
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
   </body>
 </html>
